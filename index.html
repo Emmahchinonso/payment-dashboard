@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tolly</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e2335626de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main class="wrapper flex">
+    <div class="col-1">
+      <header class="header flex">
+        <div class="header__logo">
+          <span class="header__squares"></span>Tolly
+        </div>
+        <div class="header__profile">
+          <i class="fas fa-angle-down"></i>
+          Annete
+          <img src="images/logo.jpg" class="header__img" alt="Annete profile picture" >
+        </div>
+      </header>
+
+      <section class="payment container flex">
+        <h2>Payment details</h2>
+        <div class="flex">
+          <i class="fas fa-lock"></i>
+          <div class="container-sm p-left-10">
+            <p class="payment__text-heading">Card is secured</p>
+            <p class="payment__text">Your data is protected, everything will be private</p>
+          </div>
+          
+        </div>
+      </section>
+
+      <div class="tab flex">
+        <div class="tab__button tab__button--active">Credit Card</div>
+        <div class="tab__button">Paypal</div>
+        <div class="tab__button">Other</div>
+      </div>
+      <div class="grid">
+        <div>
+          <div class="credit-card credit-card--blue">
+            <div></div>
+            <div class="credit-card__col">
+              <span class="credit-card__num">
+                <span class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span>4323</span>
+              </span>
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div class="credit-card credit-card--orange">
+            <div></div>
+            <div class="credit-card__col">
+              <span>
+                <span class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                4323
+              </span>
+
+            </div>
+          </div>
+          <div class="credit-card credit-card--green">
+            <div></div>
+            <div class="center">
+              <div>
+                Add new <button >+</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <form class="form">
+          <label for="credit-card" class="input-label">Credit card</label>
+          <div class="input-block  m-bottom-1">
+            <input type="text" id="credit-card" class="input-field">
+            <!--<span class="circle-logo"></span>-->
+          </div>
+
+          <label for="Name" class="input-label">Name</label>
+          <input type="text" id="Name" class="input-field  m-bottom-1">
+
+          <div class=" flex  m-bottom-1">
+            <div  class="m-right-2">
+              <label for="expiryDate" class="input-label">Expiration date</label>
+              <input type="text" id="expiryDate" class="input-field input-field--small">
+            </div>
+            <div>
+              <label for="cvv" class="input-label">CVV</label>
+              <div class="input-block">
+                <input type="text" id="cvv" class="input-field input-field--small">
+                <i class="far fa-eye"></i>
+              </div>
+            </div>
+
+          </div>
+
+         <div>
+           <button class="btn btn--primary">Confirm order</button>
+           <button class="btn btn--text">Cancel and Return</button>
+         </div>
+        </form>
+      </div>
+    </div>
+    <section class="col-2">
+      <h2>Order summary</h2>
+      <div class="flex">
+        <div>
+          <span></span>
+          <div>
+            <p>Step 1</p>
+            <p>Shipping</p>
+          </div>
+        </div>
+        <div>
+          <span></span>
+          <div>
+            <p>Step 1</p>
+            <p>Shipping</p>
+          </div>
+        </div>
+        <div>
+          <span></span>
+          <div>
+            <p>Step 1</p>
+            <p>Shipping</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
