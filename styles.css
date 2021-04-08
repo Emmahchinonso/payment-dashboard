@@ -85,6 +85,7 @@ span{
 
 .header__logo{
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .header__profile{
@@ -141,10 +142,7 @@ span{
   display: flex;
   border-radius: .7rem;
   margin-bottom: 1.5rem;
-}
-
-.credit-card > *{
-  flex-basis: 50%;
+  justify-content: space-between;
 }
 
 .credit-card--blue{
@@ -200,7 +198,7 @@ span{
 .stars{
   display: inline-block;
   margin-right: .3rem;
-  font-size: .5rem;
+  font-size: .3rem;
 }
 
 .form{
@@ -209,6 +207,14 @@ span{
 
 .input-block{
   position: relative;
+}
+
+.input-block i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.3rem;
+  opacity: .3;
 }
 
 .input-label {
